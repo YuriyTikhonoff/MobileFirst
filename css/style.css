@@ -60,6 +60,10 @@ ul, li {
   list-style: none;
 }
 
+button, p {
+  padding: 0;
+}
+
 body {
   min-width: 320px;
   overflow-x: hidden;
@@ -180,6 +184,18 @@ body {
   }
 }
 
+@media (min-width: 768px) {
+  .head {
+    min-height: 465px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .head {
+    min-height: 618px;
+  }
+}
+
 .top-slider {
   background: rgba(33, 33, 33, 0.5);
 }
@@ -243,6 +259,10 @@ body {
   margin: 0 10px;
 }
 
+.top-slider__text {
+  display: none;
+}
+
 .top-slider__btn {
   display: none;
 }
@@ -267,6 +287,94 @@ body {
     padding: 16px 45px;
     border: none;
     font-family: 'Roboto-Regular';
+    border-radius: 3px;
+  }
+  .top-slider .slick-dots {
+    bottom: 50px;
+  }
+  .top-slider .slick-arrow {
+    width: 56px;
+    height: 56px;
+    border: none;
+    position: absolute;
+    right: 0;
+    z-index: 5;
+  }
+  .top-slider .slick-prev {
+    background-color: #2B4074;
+    top: calc(50% - 56px);
+  }
+  .top-slider .slick-next {
+    background-color: #F9F6E5;
+    bottom: calc(50% - 56px);
+  }
+}
+
+@media (min-width: 768px) {
+  .top-slider {
+    min-height: 465px;
+  }
+  .top-slider__title {
+    padding: 87px 0 0;
+    margin: 0 auto 0;
+  }
+  .top-slider__title::after {
+    display: none;
+  }
+  .top-slider .slick-dots {
+    bottom: 52px;
+  }
+  .top-slider__text {
+    display: block;
+    font-family: 'RobotoCondensed-Regular';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    max-width: 587px;
+    margin: 32px auto 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .top-slider {
+    min-height: 618px;
+  }
+  .top-slider__item {
+    min-height: 618px;
+  }
+  .top-slider__title {
+    font-size: 84px;
+    line-height: 84px;
+    padding-top: 101px;
+    margin: 0 auto 0;
+    letter-spacing: 2px;
+    max-width: 750px;
+  }
+  .top-slider .slick-dots {
+    bottom: 80px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .top-slider {
+    min-height: 668px;
+  }
+  .top-slider__item {
+    min-height: 668px;
+  }
+  .top-slider__title {
+    font-size: 96px;
+    line-height: 96px;
+    padding-top: 107px;
+    margin: 0 auto 0;
+    letter-spacing: 2px;
+    max-width: 750px;
+  }
+  .top-slider__text {
+    font-size: 24px;
+    line-height: 26px;
+    max-width: 886px;
+    margin: 18px auto 28px;
   }
 }
 /*# sourceMappingURL=style.css.map */
