@@ -1,3 +1,9 @@
 $accent: #2B4074;
 $text-color: #4A4A4A;
-$bg-color: #F9F6E5
+$bg-color: #F9F6E5;
+
+// Вставляется в главный файл через выражение  @extend %dosis-300;
+%dosis-300{
+    font-family: 'Dosis-Light';
+    font-weight: 300;
+}
